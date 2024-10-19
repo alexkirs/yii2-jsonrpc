@@ -45,7 +45,7 @@ class JsonRpcError implements \JsonSerializable
     /**
      * @return array|mixed
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         $fields = ArrayHelper::toArray($this);
         if (!isset($this->data)) {
