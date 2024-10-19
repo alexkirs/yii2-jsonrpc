@@ -29,7 +29,7 @@ class SuccessResponse extends JsonRpcResponse
     /**
      * @return array|mixed
      */
-    public function jsonSerialize()
+    public function jsonSerialize(): mixed
     {
         // just for nice output order
         return [
